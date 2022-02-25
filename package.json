@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Dinimar-Fishboi/Insight_Hackathon/issues"
   },
-  "homepage": "https://github.com/Dinimar-Fishboi/Insight_Hackathon#readme"
+  "homepage": "https://github.com/Dinimar-Fishboi/Insight_Hackathon#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
 }

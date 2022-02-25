@@ -1,18 +1,11 @@
 import React, {useState} from 'react';
-import getList from '../utils/API'
+// import getList from '../utils/API'
 
 const List = ({
     props
 }) => {
 
-    const [results, setResults] = useState([]);
-
-    const getServerDetails = (query) => {
-        const response = await getList(query)
-        setResults(response)
-    }
-
-    if (!results.length) (
+    if (!props.results.length) (
         <>
         <p>
             No data => check API
@@ -26,7 +19,7 @@ const List = ({
                 This is the List component
             </h4>
             <button
-            onClick={getServerDetails}
+            onClick={props.getServerDetails()}
             > Retrieve server details</button>
         </>
     )
