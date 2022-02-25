@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import List from '../components/List';
 import Search from '../components/Search'
-import {getServer} from '../utils/API';
+import API from '../utils/API';
 
 const Home = ({
     props
@@ -10,7 +10,7 @@ const Home = ({
     const [results, setResults] = useState([]);
 
     const getServerDetails = (query) => {
-        const response = getServer(query)
+        const response = API.apiSearch(query)
         setResults(response)
 
         console.log(results)

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// import getList from '../utils/API'
+// import getList from  '../utils/API'
 
 const List = ({
     props
@@ -10,6 +10,9 @@ const List = ({
         <p>
             No data => check API
         </p>
+        <button
+            onClick={props.getServerDetails()}
+            > Retrieve server details</button>
         </>
     )
 
